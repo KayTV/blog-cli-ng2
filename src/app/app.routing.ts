@@ -3,11 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { NewPostComponent } from './components/newpost/newpost.component';
 
 const appRoutes: Routes = [
   {
     path: 'homepage',
     component: HomepageComponent
+  },
+  {
+    path: 'new-post',
+    component: NewPostComponent
   },
   {
     path: '',

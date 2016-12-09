@@ -4,7 +4,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 @Component({
   selector: 'homepage',
   templateUrl: './homepage.html',
-  styleUrls: ['../../styles/homepage.css']
+  styleUrls: ['../../styles/homepage.css', '../../styles/shared.css']
 })
 
 export class HomepageComponent {
