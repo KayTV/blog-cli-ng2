@@ -1,0 +1,12 @@
+<header>
+  <img src="http://orig08.deviantart.net/315b/f/2012/257/6/d/ash_walking_with_pikachu_by_retrodude12-d5eop8k.gif" >
+  <h4>The Next Adventure Starts Here</h4>
+  <a href="http://www.kaylynvannorstrand.com/"><button class="btn btn-default" type="button">KTV's Website</button></a>
+</header>
+
+<section>
+  <div class="text blogposts" *ngFor="let item of items | async">
+    <h5>{{item.title}}</h5>
+    <p>{{item.post}}</p>
+  </div>
+</section>

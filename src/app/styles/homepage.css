@@ -1,0 +1,23 @@
+header {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.blogposts {
+  min-height: 100px;
+  height: 15vh;
+  width: 50vw;
+  border: solid 3px #b3b3b3;
+  border-radius: 15px;
+  margin: 10px auto;
+  background-color: rgba(78, 76, 76, 0.7);
+}
+
+.blogposts h5 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.blogposts:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgba(78, 76, 76, 0.8);
+}

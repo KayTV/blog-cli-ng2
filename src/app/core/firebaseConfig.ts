@@ -1,7 +1,7 @@
 export const firebaseConfig = {
-  apiKey: "AIzaSyA_1071SdBKPKjXXdLSoFhgD8yEBnR8Qhg",
-  authDomain: "dummy-use-data.firebaseapp.com",
-  databaseURL: "https://dummy-use-data.firebaseio.com",
-  storageBucket: "dummy-use-data.appspot.com",
-  messagingSenderId: "1061835085089"
+  apiKey: "AIzaSyA68rlSxs8WKtMGhETjQq1PHv8pOifoDFE",
+  authDomain: "ng2-blog-backend.firebaseapp.com",
+  databaseURL: "https://ng2-blog-backend.firebaseio.com",
+  storageBucket: "ng2-blog-backend.appspot.com",
+  messagingSenderId: "776101378639"
 };
