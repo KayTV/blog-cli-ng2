@@ -26,7 +26,6 @@ export class PostComponent implements OnInit {
        this.post = this.af.database.object('/posts/'+this.id);
        console.log(this.id);
        console.log(this.post);
-
     });
   }
 }
