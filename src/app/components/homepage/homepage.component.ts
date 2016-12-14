@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import { Post } from '../../models/posts';
 
@@ -12,9 +13,18 @@ import { Post } from '../../models/posts';
 export class HomepageComponent implements OnInit {
   title = 'app works!';
   items: FirebaseListObservable<Post[]>;
-  constructor(private af: AngularFire) { }
+  item: FirebaseListObservable<Post>;
+
+  constructor(
+    private af: AngularFire,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     this.items = this.af.database.list('/posts');
+  }
+
+  onSelect(item: Post) {
+    this.router.navigate(['/post', item.$key]);
   }
 }

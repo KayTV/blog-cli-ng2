@@ -5,7 +5,7 @@
 </header>
 
 <section>
-  <div class="text blogposts" *ngFor="let item of items | async">
+  <div class="text blogposts" *ngFor="let item of items | async" (click)="onSelect(item)">
     <h5>{{item.title}}</h5>
     <p>{{item.post}}</p>
   </div>

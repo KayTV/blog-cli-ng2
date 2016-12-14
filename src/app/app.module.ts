@@ -12,13 +12,17 @@ import { firebaseConfig } from './core/firebaseConfig';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { NewPostComponent } from './components/newpost/newpost.component';
+import { PostComponent } from './components/post/post.component';
+
+import { PostService } from './services/post.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomepageComponent,
-    NewPostComponent
+    NewPostComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,9 @@ import { NewPostComponent } from './components/newpost/newpost.component';
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig)
   ],
-  providers: [],
+  providers: [
+    PostService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
