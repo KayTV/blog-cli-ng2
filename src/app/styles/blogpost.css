@@ -1,0 +1,10 @@
+.post {
+  height: 80vh;
+  padding: 5px;
+  overflow: auto;
+  width: 70vw;
+  border: solid 1px #b3b3b3;
+  border-radius: 15px;
+  margin: 10px auto;
+  background-color: rgba(78, 76, 76, 0.7);
+}

@@ -8,7 +8,8 @@ import { Post } from '../../models/posts';
 
 @Component({
   selector: 'app-item-detail',
-  templateUrl: './post.html'
+  templateUrl: './post.html',
+  styleUrls: ['../../styles/blogpost.css']
 })
 export class PostComponent implements OnInit {
   id: string;
@@ -22,10 +23,20 @@ export class PostComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-       this.id = params['id']; // (+) converts string 'id' to a number
+       this.id = params['id'];
        this.post = this.af.database.object('/posts/'+this.id);
        console.log(this.id);
        console.log(this.post);
     });
+  }
+
+  update(description: string, title: string, post: string) {
+    this.post.update({description: description, title: title, post: post});
+    alert('updated post');
+  }
+
+  delete() {
+    this.post.remove();
+    window.history.back();
   }
 }
